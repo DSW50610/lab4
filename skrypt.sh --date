@@ -4,4 +4,4 @@ git add skrypt.sh --date
 git commit -m
 git push
 git checkout main
-git merge skrypt.sh --date
+git merge taskBranch
