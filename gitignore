@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "*log*" > .gitignore
+*error*.txt
 
 git add gitignore
 git commit -m
