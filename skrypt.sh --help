@@ -6,4 +6,5 @@ git add skrypt.sh --help
 git commit -m
 git push
 git checkout main
+git rebase
 git merge taskBranch
