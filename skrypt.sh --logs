@@ -1,0 +1,11 @@
+for ((i=1; i<=100; i++))
+do
+    filename="log${i}.txt"
+    echo -e "Nazwa pliku: $filename\nNazwa skryptu: skrypt.sh --logs\nData: $(date)\n" > "$filename"
+done
+
+git add skrypt.sh --date
+git commit -m
+git push
+git checkout main
+git merge skrypt.sh --date
