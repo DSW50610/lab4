@@ -1,3 +1,5 @@
+#!/bin/bash
+
 date +"%d-%m-%Y"
 
 git add skrypt.sh --date
