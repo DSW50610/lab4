@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -o
+
+git add skrypt.sh --help
+git commit -m
+git push
+git checkout main
+git merge taskBranch
