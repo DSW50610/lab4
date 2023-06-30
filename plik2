@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ "$1" = "--error" ] || [ "$1" = "-e" ]; then
+    if [ -z "$2" ]; then
+        liczba_plików=100
+    else
+        liczba_plików=$2
+    fi
+
+    for i in $(seq 1 $liczba_plików); do
+        echo "error$i.txt" >> error$i.txt
+    done
+fi
+
+git add plik2
+git commit -m
+git push
+git checkout main
+git merge taskBranch
